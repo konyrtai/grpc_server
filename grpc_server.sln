@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grpc_server", "grpc_server\grpc_server.csproj", "{CAE01FE2-EE8C-4704-A219-A308D8CB202B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "grpc_server", "grpc_server\grpc_server.csproj", "{CAE01FE2-EE8C-4704-A219-A308D8CB202B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "protobuf_contracts", "protobuf_contracts", "{D5030DF4-F787-45AF-BE9B-83B7A66B183A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "greet_service", "greet_service", "{F7F0EA82-77AD-42F7-8958-7473CF594973}"
+	ProjectSection(SolutionItems) = preProject
+		protobuf_contracts\greet_service\greet.proto = protobuf_contracts\greet_service\greet.proto
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7F0EA82-77AD-42F7-8958-7473CF594973} = {D5030DF4-F787-45AF-BE9B-83B7A66B183A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9E8CB369-27F0-4F73-BFE9-5D272B04A552}

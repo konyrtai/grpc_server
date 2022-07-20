@@ -1,5 +1,5 @@
 using Grpc.Core;
-using grpc_server;
+using SimpleGrpcService;
 
 namespace grpc_server.Services
 {
